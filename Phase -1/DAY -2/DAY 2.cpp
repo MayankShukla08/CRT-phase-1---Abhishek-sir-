@@ -59,3 +59,44 @@ int main() {
     return 0;
 
 }
+
+
+//problem -4  ternary operator 
+// find the greater number among 2 
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,b;
+    int max_number;
+    
+    cin >> a >> b ;
+    
+    //ternary operator 
+    max_number = (a > b) ? a : b;
+    
+    cout <<max_number;
+    return 0;
+
+}
+
+//problem -5  Continue statment  
+// Print 1 to N and avoid those number which are divisible by 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    
+    for (int i= 1; i<= n; i++) {
+        if (i % 3 ==0) {
+            continue ;
+        }
+        cout << i << " ";
+        
+    }
+     cout << "\n";
+    return 0;
+
+}
