@@ -123,3 +123,68 @@ int main() {
     return 0;
 
 }
+
+//problem 7 -- smart home lighting system  
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  string dayOrNight;
+  bool motionDetected;
+  
+  cout << "is it Day or Night ? :";
+  cin >> dayOrNight;
+  cout << "is motion detected? (1 for yes ,0 for no):";
+  cin >> motionDetected;
+  
+  if(dayOrNight == "night" || dayOrNight == "Night"){
+      if(motionDetected){
+          cout << "turn on the LED light with 100% brightness.. ";
+      }else {
+          cout << "turn on LED light with 10% brightness.. ";
+      }
+      } else {
+        cout << "turn off the lights..." ; 
+      
+      }
+  return 0;
+}
+
+
+//problem 8 -- customer support IVR system  
+// 1 -- for support 
+// 2 -- for billing
+// 3 -- Technical issues 
+// 4 -- talk to the Agent
+
+#include <iostream>
+using namespace std;
+
+int main() {
+ int choice ;
+ cin >> choice ;
+ 
+ switch (choice){
+     case 1:
+     cout <<"Transferring call to the customer supprot...";
+     break;
+     
+     case 2:
+     cout <<"Transferring call to billing and accounts...";
+      break;
+      
+     case 3:
+     cout << "connecting to the Techinical help desk...";
+      break;
+      
+     case 4:
+     cout << "connecting call to the agent... ";
+      break;
+      
+    default: 
+    cout << "Invalid selection , enter a valid number"  ;
+ }
+ return 0;
+}
+
