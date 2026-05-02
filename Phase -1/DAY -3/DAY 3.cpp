@@ -94,3 +94,53 @@ int main(){
    cout << fact;
     return 0;
 }
+
+// problem -8 --fibonacci series 
+
+#include <iostream>
+using namespace std;
+int main(){
+  int n;
+  cin >> n;
+  int c;
+  
+  int a = 0;
+  int b = 1;
+  
+  for (int i=0; i<n; i++){
+      cout << a << " ";
+      c = a + b;
+      a = b ;
+      b = c;
+  }
+    return 0;
+}
+
+
+// problem -9 -- prime number checker 
+
+#include <iostream>
+using namespace std;
+int main(){
+ int n;
+ cin >> n;
+ bool isPrime = true;
+ 
+ if(n < 2){
+     isPrime = false;
+ }else {
+     for(int i=2; i<n; i++){
+         if (n % i==0){
+             isPrime = false;
+             break;
+             
+         }
+     }
+ }
+ if(isPrime){
+     cout << "Prime Number";
+ }else {
+     cout << "not a Prime Number";
+ }
+    return 0;
+}
