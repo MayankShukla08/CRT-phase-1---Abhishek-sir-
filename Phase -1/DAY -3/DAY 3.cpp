@@ -49,3 +49,48 @@ int main(){
         
     return 0;
 }
+
+
+// problem -5 --print 1-10 using a do-while loop 
+#include <iostream>
+using namespace std;
+int main(){
+    int i= 1;
+    do{
+        cout << i << " ";
+        i++;
+    } while (i<=10);
+    
+    return 0;
+}
+
+
+// problem -6 --print 10-1 using a do-while loop 
+#include <iostream>
+using namespace std;
+int main(){
+    int i= 10;
+    do{
+        cout << i << " ";
+        i--;
+    } while (i>=1);
+    
+    return 0;
+}
+
+
+// problem -7 --finding factorial of any number 
+
+#include <iostream>
+using namespace std;
+int main(){
+   int n;
+   cin >> n;
+   int fact = 1;
+   for (int i=n; i>=1; i--){
+       fact = fact * i;
+       
+   }
+   cout << fact;
+    return 0;
+}
