@@ -82,3 +82,67 @@ int main() {
 
     return 0;
 }
+
+// Problem 4 
+// Print Mirror of Right Angled Triangle
+
+ #include <iostream>
+ using namespace std;
+
+int main() {
+//     int n;
+//     cin >> n;
+//     // number of times or number of rows
+//     for(int i = 1; i <= n; i++) {
+//         // number of spaces logic is here
+//         for(int j = n - i; j >= 1; j--) {
+//             cout << " ";
+//         }
+//         for(int k = 1; k <= i; k++) {
+//             cout << "*";
+//         }
+//         cout << "\n";
+    }
+ }
+
+// Problem 5 
+// Print a Rectangle
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int row, col;
+    cin >> row;
+    cin >> col;
+    
+    for(int i = 1; i <= row; i++) {
+        for(int j = 1; j <= col; j++) {
+            cout <<"*";
+        }
+        cout <<"\n";
+    }
+}
+
+
+// Problem 6
+// Print a hollow square
+#include <iostream>
+using namespace std;
+int main() {
+	
+
+	for(int i = 1; i <= 5; i++) {
+		
+		for(int j =1; j <=5; j++) {
+		    cout << " ";
+		    if (i == 1 || j==1 || i==5 || j==5) {
+		        cout << "*";
+		    }else{
+		        cout << " ";
+		    }
+		    
+		}
+		cout << "\n";
+	}
+}
