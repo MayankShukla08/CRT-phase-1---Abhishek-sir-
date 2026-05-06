@@ -164,3 +164,36 @@ int main() {
         cout << "\n";
     }
 }	
+
+//upper right angked triangle with mirror below
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // number of times to print the pattern
+    for(int i = 1; i <= 6; i++) {
+        // this defines what to print in the pattern
+        for(int j = 1; j <= i; j++){
+                cout << "* ";
+        }
+        cout << "\n";
+    }
+
+             
+             for(int k = 5-1; k >= 1; k--){
+                for (int l=1; l<=k ; l++){
+                cout << "* ";
+        }
+        cout << "\n";
+    }
+
+    return 0;
+}
+
+
+
+
+
+
