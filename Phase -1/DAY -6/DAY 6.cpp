@@ -104,3 +104,31 @@ int main() {
     setTemprature("ECO"); // set temprature to 24
     setTemprature("TURBO"); // setTemprature to 18
 }
+
+
+
+// Classes and Objects
+// problems --6
+// 
+
+#include <iostream>
+using namespace std;
+
+class Student {
+    public :
+        string name;
+        int age;
+        
+        void introduction (){
+            cout  << "hi there, this person's name is " << name << " and his age is " << age << "\n";
+            
+        }
+    };
+    
+    int main (){
+        Student s1;
+        s1.name = "Raka";
+        s1.age = 1000;
+        s1.introduction();
+        
+    }

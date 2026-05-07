@@ -1,0 +1,23 @@
+//Day -7 -- 
+// Access Specifier 
+// 7.2 -- public 
+
+
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+    
+    private:
+        int balance = 5000;
+    
+    public:
+    void showBalance (){
+        cout << "Balance in your account is : " << balance;
+    }
+};
+
+    int main (){
+        BankAccount myaccount ;
+        myaccount.showBalance();
+}
