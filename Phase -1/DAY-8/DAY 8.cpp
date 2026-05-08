@@ -167,3 +167,89 @@ int main (){
   D obj1;
   obj1.print();
 }
+
+
+
+
+//problem -2 
+// Polymorphism
+// Polymorphism means one name but many forms
+//same function behave diffrently depending on the type of the object it called 
+// Two types 
+// Complie time Polymorphism -- function overloading -- static
+// resolve at compile time 
+// function overloads -- same function name , but diffrent parameters
+// faster excution
+// Run time Polymorphism -- function overriding -- dynamic
+// resolve at run time 
+// function runtime -- same function , same parameters , but diffrent class
+// uses a virtual keyword in the base class
+// acheving this through the concept of Inheritance
+
+
+
+
+// types of Polymorphism --2.1
+// Function overloading
+
+#include <iostream>
+using namespace std;
+class maths {
+    public :
+    void add (int a, int b){
+        cout << a + b << "\n";
+    }
+public :
+void add (int a , int b, int c ){
+    cout << a + b + c << "\n";
+    
+}
+public :
+void add (double a , double b) {
+    cout << a +b << "\n";
+}
+};
+int main (){
+    maths m;
+    m.add (5,2);
+    m.add (5,5,5,);
+    m.add (5.2,2.2);
+}
+
+
+
+// types of Polymorphism --2.1
+// Function overloading
+
+#include <iostream>
+using namespace std;
+
+class Animal {
+    public :
+   virtual void sound (){
+        cout << "animal makes sound" ;
+        }
+    };
+    
+class Dog : public Animal {
+    public:
+    void sound() override {
+        cout << "dog makes a sound" << "\n";
+    }
+};
+
+class Cat : public Animal {
+    public :
+     void sound() override {
+        cout << "Cat makes a sound"<< "\n";
+    }
+    
+};
+
+int main (){
+    Dog d;
+    Cat c;
+    d.sound();
+    c.sound();
+    
+}
