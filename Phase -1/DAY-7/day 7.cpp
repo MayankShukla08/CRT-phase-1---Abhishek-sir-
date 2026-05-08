@@ -151,3 +151,11 @@ int main() {
     obj1.setBalance(5000);
     cout << obj1.getbalance();
 }
+
+
+// program 4-
+// Abstraction
+// Abstraction means hidding the implementation and showing only the necessary / essential
+// features to the users 
+// abstract class -- class cannot be initialized and it is formed using the abstract keyword
+// absrtact method -- there is no initialization of the abstract method 
