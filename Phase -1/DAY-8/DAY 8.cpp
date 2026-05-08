@@ -253,3 +253,30 @@ int main (){
     c.sound();
     
 }
+
+
+// types of Polymorphism --2.2
+// Function overriding
+
+#include <iostream>
+using namespace std;
+
+class Parent {
+    public :
+    virtual void sum (int a, int b){
+        cout << a + b << "parent";
+        }
+    };
+    
+class child : public Parent {
+    public:
+    void sum(int a, int b)  {
+        cout << a + b << "child";
+    }
+};
+
+int main (){
+    child c;
+    c.sum(10,20);
+    
+}
