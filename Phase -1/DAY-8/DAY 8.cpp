@@ -101,3 +101,69 @@ int main (){
   obj2.drive();
   
 }
+
+
+
+//1.4 Multiple Inheritance
+
+#include <iostream>
+using namespace std;
+
+class Parent1  {
+    public :
+    void giveMeMoney(){
+        cout << "mummy paise do mujhe" << "\n";
+    }
+};
+
+class Parent2  {
+    public:
+    void giveMeMoney(){
+        cout <<"papa paise do mujhe";
+    }  
+};
+
+class child : public Parent1, public Parent2 {
+    //NO LOGIC
+};
+
+
+// Judadu tarika for less numbers
+int main (){
+  child obj1;
+  //obj1.giveMeMoney(); 
+  obj1.Parent1::giveMeMoney();
+   obj1.Parent2::giveMeMoney();
+    
+}
+
+                                            
+
+//1.5 Hybride Inheritance
+
+#include <iostream>
+using namespace std;
+
+class A  {
+    public :
+    void print (){
+        cout << "BJP Wons" << "\n";
+    }
+};
+
+class B : virtual public A {
+     //NO LOGIC
+};
+
+class C : virtual public A {
+     //NO LOGIC
+};
+
+class D : public B , public C{
+     //NO LOGIC
+};
+
+int main (){
+  D obj1;
+  obj1.print();
+}
