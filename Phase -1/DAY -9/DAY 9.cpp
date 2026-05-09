@@ -45,3 +45,46 @@ int main (){
 }
     
 
+
+// problem -2 -- 
+// Constructor Overloading
+
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+    public : 
+   int length;
+   int width;
+   
+   Rectangle (){
+       length = 1;
+       width = 1;
+       
+   }
+   Rectangle(int side){
+       length = side;
+       width = side;
+       
+       
+   }
+   Rectangle(int side1, int side2){
+       length = side1;
+       width = side2;
+       
+   }
+   void showArea (){
+       cout << length * width << "\n";
+   }
+};
+
+int main (){
+    Rectangle r1;
+    Rectangle r2(5);
+    Rectangle r3(5,4);
+    
+    r1.showArea();
+    r2.showArea();
+    r3.showArea();
+    
+}
