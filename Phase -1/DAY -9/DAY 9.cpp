@@ -88,3 +88,80 @@ int main (){
     r3.showArea();
     
 }
+
+
+
+// problem -3 -- 
+// Intorduction to Array + Traversal + Memory Layout 
+
+
+
+#include <iostream>
+using namespace std;
+
+void traversal (int arr[], int size){
+    for (int i = 0; i < size; i++){
+        cout << arr[i]<< " ";
+        
+    }
+}
+
+int main(){
+    int arr[] ={10,20,30,40,50};
+    traversal (arr,5);
+}
+
+
+// outpus = address
+#include <iostream>
+using namespace std;
+
+void traversal (int arr[], int size){
+    for (int i = 0; i < size; i++){
+        cout << &arr[i]<< " ";
+        
+    }
+}
+
+int main(){
+    int arr[] ={10,20,30,40,50};
+    traversal (arr,5);
+}
+
+
+
+// Problem -- 4
+// Print memeory address of each data
+void Addresstraversal(int arr[], int size){
+     for(int i = 0; i < size; i++) {
+         cout << &arr[i] <<" ";
+     }
+ }
+int main() {
+    int arr[] = {10,20,30,40,50};
+    Addresstraversal(arr, 5);
+}
+
+
+// problem -5  -- 
+// Linear search 
+
+
+
+#include <iostream>
+using namespace std;
+
+int LinearSearch(int arr[], int size , int targetValue){
+    for (int i=0; i < size; i++){
+        if (arr[i] == targetValue){
+            return i;
+        }
+    }
+    return -1;
+}
+
+int main (){
+    int arr[] ={10,20,30,40,50};
+    int targetIndex = LinearSearch(arr , 5,40);
+    cout << targetIndex;
+}
