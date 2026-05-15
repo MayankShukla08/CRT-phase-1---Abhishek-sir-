@@ -29,3 +29,29 @@ int main()
 
     return 0;
 }
+
+
+
+// problem -2 Tiling Problem 
+
+#include <iostream>
+using namespace std;
+
+int consecutiveOnes(int n){
+    
+    //base condition}
+    if(n < 4 ){
+        return 1;
+    }
+    //logic
+    
+    return consecutiveOnes(n - 1) + consecutiveOnes(n - 4);
+}
+
+
+int main()
+{
+    cout << consecutiveOnes(10);
+
+    return 0;
+}
